@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:fitsSystemWindows="true" xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:background="@color/background_primary">
+
+    <!-- Toolbar -->
+    <com.google.android.material.appbar.MaterialToolbar android:id="@+id/toolbar"
+        android:layout_width="match_parent" android:layout_height="56dp"
+        android:background="@color/toolbar_background" android:elevation="1dp" android:paddingHorizontal="4dp">
+<LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+            android:orientation="horizontal" android:gravity="center_vertical">
+            <ImageButton android:id="@+id/backButton" android:layout_width="40dp" android:layout_height="40dp"
+                android:background="@drawable/ripple_circle" android:src="@drawable/ic_back" android:scaleType="center" android:contentDescription="Geri"/>
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+                android:text="Profili Düzenle" android:textSize="18sp" android:textColor="@color/text_primary"
+                android:fontFamily="sans-serif-medium" android:layout_marginStart="12dp"/>
+            <com.google.android.material.button.MaterialButton android:id="@+id/saveButton"
+                android:layout_width="wrap_content" android:layout_height="40dp" android:text="Kaydet"
+                android:textSize="14sp" android:textAllCaps="false" app:backgroundTint="@color/instagram_blue"
+                app:cornerRadius="8dp" android:paddingHorizontal="20dp" android:layout_marginEnd="8dp"/>
+        </LinearLayout>
+    </com.google.android.material.appbar.MaterialToolbar>
+    <View android:layout_width="match_parent" android:layout_height="0.5dp" android:background="@color/divider_color"/>
+
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:padding="20dp">
+
+            <!-- Profile Photo -->
+            <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:gravity="center" android:layout_marginBottom="20dp">
+<LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:orientation="vertical" android:gravity="center" android:layout_gravity="center">
+                    <FrameLayout android:id="@+id/photoContainer" android:layout_width="96dp" android:layout_height="96dp"
+                        android:layout_marginBottom="8dp" android:clickable="true" android:focusable="true">
+                        <View android:layout_width="96dp" android:layout_height="96dp" android:background="@drawable/avatar_gradient_ring"/>
+                        <FrameLayout android:layout_width="88dp" android:layout_height="88dp" android:layout_gravity="center"
+                            android:background="@drawable/circle_avatar_bg">
+                            <TextView android:id="@+id/profileInitial" android:layout_width="match_parent" android:layout_height="match_parent"
+                                android:gravity="center" android:textColor="@color/white" android:textSize="32sp" android:fontFamily="sans-serif-medium"/>
+                            <de.hdodenhof.circleimageview.CircleImageView android:id="@+id/profileImage" android:layout_width="match_parent" android:layout_height="match_parent"
+                                android:visibility="gone" android:contentDescription="Profil" />
+                        </FrameLayout>
+                        <ImageView android:layout_width="28dp" android:layout_height="28dp" android:layout_gravity="bottom|end"
+                            android:src="@drawable/ic_camera" android:background="@drawable/circle_avatar_bg" android:padding="4dp"
+                            android:contentDescription="Fotoğraf Değiştir"/>
+                    </FrameLayout>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Fotoğrafı Değiştir" android:textSize="13sp" android:textColor="@color/instagram_blue"/>
+                </LinearLayout>
+            </FrameLayout>
+
+            <!-- Username -->
+            <com.google.android.material.textfield.TextInputLayout style="@style/InstagramTextInput"
+                android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="12dp"
+                android:hint="Kullanıcı Adı">
+                <com.google.android.material.textfield.TextInputEditText android:id="@+id/usernameInput"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:inputType="textPersonName" android:textSize="14sp"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Display Name -->
+            <com.google.android.material.textfield.TextInputLayout style="@style/InstagramTextInput"
+                android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="12dp"
+                android:hint="Görünen Ad">
+                <com.google.android.material.textfield.TextInputEditText android:id="@+id/displayNameInput"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:inputType="textPersonName" android:textSize="14sp"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Bio -->
+            <com.google.android.material.textfield.TextInputLayout style="@style/InstagramTextInput"
+                android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="20dp"
+                android:hint="Biyografi" app:counterEnabled="true" app:counterMaxLength="150">
+                <com.google.android.material.textfield.TextInputEditText android:id="@+id/bioInput"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:inputType="textMultiLine" android:minLines="2" android:maxLines="4" android:textSize="14sp"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Private Account Toggle -->
+            <View android:layout_width="match_parent" android:layout_height="0.5dp" android:background="@color/divider_color"/>
+<LinearLayout android:layout_width="match_parent" android:layout_height="56dp"
+                android:orientation="horizontal" android:gravity="center_vertical" android:paddingHorizontal="4dp">
+                <ImageView android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/ic_lock"
+                    android:layout_marginEnd="12dp" android:contentDescription="@null"/>
+<LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+                    android:orientation="vertical">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Gizli Hesap" android:textSize="15sp" android:textColor="@color/text_primary"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Sadece takipçilerin gönderilerini görebilir" android:textSize="12sp" android:textColor="@color/text_secondary"/>
+                </LinearLayout>
+                <com.google.android.material.switchmaterial.SwitchMaterial android:id="@+id/privateSwitch"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    app:thumbTint="@color/instagram_blue" app:trackTint="@color/divider_color"/>
+            </LinearLayout>
+            <View android:layout_width="match_parent" android:layout_height="0.5dp" android:background="@color/divider_color"/>
+
+            <!-- Loading -->
+            <com.google.android.material.progressindicator.LinearProgressIndicator android:id="@+id/progressBar"
+                android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp"
+                android:visibility="gone" app:indicatorColor="@color/instagram_blue" android:indeterminate="true"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+
+
+

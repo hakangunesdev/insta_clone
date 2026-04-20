@@ -1,0 +1,14 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Base.Theme.Instagram_clone" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/instagram_blue</item>
+        <item name="colorPrimaryDark">@color/instagram_blue_dark</item>
+        <item name="colorAccent">@color/instagram_blue</item>
+        <item name="android:colorBackground">@color/background_primary</item>
+        <item name="android:windowBackground">@color/background_primary</item>
+        <item name="android:statusBarColor">@color/status_bar_color</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:navigationBarColor">@color/white</item>
+        <item name="android:textColorPrimary">@color/text_primary</item>
+        <item name="android:textColorSecondary">@color/text_secondary</item>
+    </style>
+</resources>

@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Instagram</string>
+    <string name="hint_email">E-posta adresi</string>
+    <string name="hint_password">Şifre</string>
+    <string name="hint_username">Kullanıcı Adı</string>
+    <string name="btn_sign_in">Giriş Yap</string>
+    <string name="btn_sign_up">Kayıt Ol</string>
+    <string name="or_divider">VEYA</string>
+    <string name="welcome_text">Arkadaşlarının fotoğraf ve videolarını görmek için kayıt ol.</string>
+    <string name="new_post">Yeni Gönderi</string>
+    <string name="share">Paylaş</string>
+    <string name="hint_comment">Bir yorum yazın...</string>
+    <string name="select_photo">Fotoğraf Seç</string>
+    <string name="tap_to_select">Fotoğraf seçmek için dokunun</string>
+    <string name="uploading">Yükleniyor...</string>
+    <string name="logout">Çıkış Yap</string>
+    <string name="add_post">Gönderi Ekle</string>
+    <string name="no_posts">Henüz gönderi yok</string>
+    <string name="no_posts_desc">İlk gönderiyi paylaşan sen ol!</string>
+    <string name="like">Beğen</string>
+    <string name="comment_label">Yorum</string>
+    <string name="share_post">Paylaş</string>
+    <string name="search">Ara</string>
+    <string name="profile">Profil</string>
+    <string name="edit_profile">Profili Düzenle</string>
+    <string name="follow">Takip Et</string>
+    <string name="following">Takip Ediliyor</string>
+    <string name="followers">Takipçiler</string>
+    <string name="follow_requests">Takip İstekleri</string>
+    <string name="private_account">Bu Hesap Gizli</string>
+    <string name="comments">Yorumlar</string>
+    <string name="create_account">Hesap Oluştur</string>
+    <string name="back_to_login">Girişe Dön</string>
+</resources>
