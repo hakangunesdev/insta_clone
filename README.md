@@ -4,20 +4,23 @@
   <img src="https://img.shields.io/badge/Kotlin-100%25-blue?style=for-the-badge&logo=kotlin" alt="Kotlin" />
   <img src="https://img.shields.io/badge/Architecture-MVVM-orange?style=for-the-badge" alt="MVVM" />
   <img src="https://img.shields.io/badge/Backend-Firebase-FFCA28?style=for-the-badge&logo=firebase" alt="Firebase" />
-  <img src="https://img.shields.io/badge/Status-Active-success?style=for-the-badge" alt="Active" />
 </p>
 
 > An enterprise-grade Instagram clone designed to showcase modern Android development practices. Powered by Kotlin, Clean Architecture, and MVVM, this project delivers a seamless social media experience backed by the real-time capabilities of the Firebase ecosystem.
 
 ## 📸 Screenshots
 
-| Feed | Profile | Edit Profile | Search |
+| Login | Register | Feed | Profile |
 | :---: | :---: | :---: | :---: |
-| <img src="screenshots/1_feed.png" width="200"/> | <img src="screenshots/2_profile.png" width="200"/> | <img src="screenshots/5_edit_profile.png" width="200"/> | <img src="screenshots/4_search.png" width="200"/> |
+| <img src="screenshots/9_login.png" width="200"/> | <img src="screenshots/10_register.png" width="200"/> | <img src="screenshots/1_feed.png" width="200"/> | <img src="screenshots/2_profile.png" width="200"/> |
 
-| Upload Post | Chat List | Chat Room | Comments |
+| Edit Profile | Search | Upload Post | Chat List |
 | :---: | :---: | :---: | :---: |
-| <img src="screenshots/6_upload.png" width="200"/> | <img src="screenshots/3_chat.png" width="200"/> | <img src="screenshots/7_chat_room.png" width="200"/> | <img src="screenshots/8_comments.png" width="200"/> |
+| <img src="screenshots/5_edit_profile.png" width="200"/> | <img src="screenshots/4_search.png" width="200"/> | <img src="screenshots/6_upload.png" width="200"/> | <img src="screenshots/3_chat.png" width="200"/> |
+
+| Chat Room | Comments |
+| :---: | :---: |
+| <img src="screenshots/7_chat_room.png" width="200"/> | <img src="screenshots/8_comments.png" width="200"/> |
 
 ---
 
